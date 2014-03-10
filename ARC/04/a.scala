@@ -23,4 +23,4 @@ object Main {
     println(diffmax)
   }
 }
-
+// Main.main(null)

@@ -9,9 +9,10 @@ object Main {
     }
     for(i <- 0 until 4){
       for(j <- 0 until 4){
-          print(c(i)(j)+" ")
+        print(c(i)(j)+" ")
       }
       println("")
     }
   }
 }
+// Main.main(null)

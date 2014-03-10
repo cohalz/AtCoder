@@ -11,3 +11,4 @@ object Main {
     println(m1 min m2 min m3 min m4)
   }
 }
+// Main.main(null)

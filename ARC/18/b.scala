@@ -26,3 +26,4 @@ object Main {
     println(count)
   }
 }
+// Main.main(null)

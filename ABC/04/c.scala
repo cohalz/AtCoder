@@ -12,3 +12,4 @@ object Main {
     println("")
   }
 }
+// Main.main(null)

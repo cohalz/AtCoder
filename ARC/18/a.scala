@@ -4,3 +4,4 @@ object Main {
     println(a(0).toDouble*a(0).toDouble*a(1).toDouble/10000)
   }
 }
+// Main.main(null)

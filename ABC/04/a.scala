@@ -4,3 +4,4 @@ object Main {
     println(2*N)
   }
 }
+// Main.main(null)
