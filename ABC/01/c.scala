@@ -22,4 +22,4 @@ object Main {
     else                 println("12")
    }
 }
-  Main.main(null)
+  // Main.main(null)
