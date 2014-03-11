@@ -1,5 +1,5 @@
 object Main {
-  def main(arg:Array[String]) = {
+  def main(args:Array[String]) = {
     val n = readInt
     val str = readLine
     val m1 = str.filter{_ == '1'}.length
@@ -11,4 +11,3 @@ object Main {
     println(m1 min m2 min m3 min m4)
   }
 }
-// Main.main(null)

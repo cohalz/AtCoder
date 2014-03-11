@@ -1,5 +1,5 @@
 object Main {
-  def main(arg:Array[String]) = {
+  def main(args:Array[String]) = {
     val n = readInt
     var a = Array.ofDim[Int](n, 2)
     var tmp = ""
@@ -23,4 +23,3 @@ object Main {
     println(diffmax)
   }
 }
-// Main.main(null)

@@ -1,5 +1,5 @@
 object Main {
-  def main(arg:Array[String]) = {
+  def main(args:Array[String]) = {
     val in = readLine.split(" ")
     val deg = in(0).toInt
     val dis = in(1).toInt / 60.0
@@ -20,6 +20,5 @@ object Main {
     else if(dis < 28.45) println("10")
     else if(dis < 32.65) println("11")
     else                 println("12")
-   }
+  }
 }
-  // Main.main(null)

@@ -1,5 +1,5 @@
 object Main {
-  def main(arg:Array[String]) = {
+  def main(args:Array[String]) = {
     val N = readInt
     var arr = Array(1,2,3,4,5,6)
     var tmp:Int = 0
@@ -12,4 +12,3 @@ object Main {
     println("")
   }
 }
-// Main.main(null)

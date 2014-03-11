@@ -1,6 +1,5 @@
 object Main {
-  def main(arg:Array[String]) = {
+  def main(args:Array[String]) = {
     println(readInt - readInt)
   }
 }
-// Main.main(null)

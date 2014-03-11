@@ -1,5 +1,5 @@
 object Main {
-  def main(arg:Array[String]) = {
+  def main(args:Array[String]) = {
     val n = readInt
     var count = 0
     val array = Array.ofDim[Long](n, 2)
@@ -26,4 +26,3 @@ object Main {
     println(count)
   }
 }
-// Main.main(null)
