@@ -3,5 +3,5 @@ AtCoder
 
 my submissions
 ##current goal
-・ABC A~C
+・ABC A~C  
 ・ARC A~B
