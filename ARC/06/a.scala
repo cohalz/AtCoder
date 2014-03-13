@@ -9,7 +9,7 @@ object Main {
       if(l.exists(e(i) == _)) count += 1
     }
     if(count == 5 && l.exists(_ == b)) f = 1
-    else if(count == 6) println(1)
+    if(count == 6) println(1)
     else if(count == 5) println(3-f)
     else if(count > 2) println(8-count)
     else println(0)

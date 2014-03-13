@@ -12,12 +12,12 @@ object Main {
     var tmp2 = for(i <- 1 to m if i%q == 0) yield i
     var tmp3 = for(i <- 1 to l if i%r == 0) yield i
     val count1 = tmp1.length * tmp2.length * tmp3.length
-    p = in2(1)
-    q = in2(0)
-    tmp1 = for(i <- 1 to n if i%p == 0) yield i
-    tmp2 = for(i <- 1 to m if i%q == 0) yield i
-    tmp3 = for(i <- 1 to l if i%r == 0) yield i
-    val count2 = tmp1.length * tmp2.length * tmp3.length
-    println(count1 max count2)
+    var tmp4 = for(i <- 1 to n if i%q == 0) yield i
+    var tmp5 = for(i <- 1 to m if i%p == 0) yield i
+    val count2 = tmp4.length * tmp5.length * tmp3.length
+    if(tmp3 contains l) println(count1 max count2)
+    else if(!(tmp1.contains(n)) && !(tmp2.contains(m)) && tmp4.contains(n) && tmp5.contains(m)) println(count2)
+    else if(!(tmp4.contains(n)) && !(tmp5.contains(m)) && tmp1.contains(n) && tmp2.contains(m)) println(count1)
+    else println(0)
   }
 }
