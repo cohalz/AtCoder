@@ -1,1 +1,1 @@
-#[AtCoder Regular Contest #10](http://arc10.contest.atcoder.jp/)
+#[AtCoder Regular Contest #010](http://arc010.contest.atcoder.jp/)
