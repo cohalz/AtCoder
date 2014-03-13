@@ -8,21 +8,21 @@ object Main {
     var p = in2(0)
     var q = in2(1)
     var r = in2(2)
-    var tmp1 = for(i <- 1 to n if i%p == 0) yield i
-    var tmp2 = for(i <- 1 to m if i%q == 0) yield i
-    var tmp3 = for(i <- 1 to l if i%r == 0) yield i
-    var tmp4 = for(i <- 1 to n if i%q == 0) yield i
-    var tmp5 = for(i <- 1 to m if i%r == 0) yield i
-    var tmp6 = for(i <- 1 to l if i%p == 0) yield i
-    var tmp7 = for(i <- 1 to n if i%r == 0) yield i
-    var tmp8 = for(i <- 1 to m if i%p == 0) yield i
-    var tmp9 = for(i <- 1 to l if i%q == 0) yield i
-    var c1 = tmp1.length * tmp2.length * tmp3.length
-    var c2 = tmp1.length * tmp5.length * tmp9.length
-    var c3 = tmp4.length * tmp5.length * tmp6.length
-    var c4 = tmp4.length * tmp8.length * tmp3.length
-    var c5 = tmp7.length * tmp8.length * tmp9.length
-    var c6 = tmp7.length * tmp2.length * tmp6.length
+    var tmp1 = (1 to n).filter(_%p == 0).length
+    var tmp2 = (1 to m).filter(_%q == 0).length
+    var tmp3 = (1 to l).filter(_%r == 0).length
+    var tmp4 = (1 to n).filter(_%q == 0).length
+    var tmp5 = (1 to m).filter(_%r == 0).length
+    var tmp6 = (1 to l).filter(_%p == 0).length
+    var tmp7 = (1 to n).filter(_%r == 0).length
+    var tmp8 = (1 to m).filter(_%p == 0).length
+    var tmp9 = (1 to l).filter(_%q == 0).length
+    var c1 = tmp1 * tmp2 * tmp3
+    var c2 = tmp1 * tmp5 * tmp9
+    var c3 = tmp4 * tmp5 * tmp6
+    var c4 = tmp4 * tmp8 * tmp3
+    var c5 = tmp7 * tmp8 * tmp9
+    var c6 = tmp7 * tmp2 * tmp6
     println(c1 max c2 max c3 max c4 max c5 max c6)
   }
 }
