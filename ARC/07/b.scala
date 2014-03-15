@@ -14,8 +14,6 @@ object Main {
       c(c.indexOf(d(i))) = c(0)
       c(0) = tmp
     }
-    for(i <- 1 to n){
-      println(c(i))
-    }
+    c.tail.foreach(println)
   }
 }
